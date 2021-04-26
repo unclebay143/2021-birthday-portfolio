@@ -1,0 +1,16 @@
+/* MAKE ALL INVISIBLE */
+.reveal{
+  position: relative;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+
+/* MAKE THE ACTIVE ELEMENT VISIBLE */
+  
+.reveal.active{
+  transform: translateY(0px);
+  opacity: 1;
+}
+      

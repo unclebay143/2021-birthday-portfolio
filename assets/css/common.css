@@ -1,0 +1,33 @@
+/* FONT FAMILY POPPINS FROM GOOGLE */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+/* RESET BROWSER DEFAULT STYLINGS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* SCROOL BAR STYLE */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    background: #888; 
+    border-radius:10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+} 

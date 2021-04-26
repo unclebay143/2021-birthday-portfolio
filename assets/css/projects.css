@@ -1,0 +1,160 @@
+
+
+
+
+/* projects section */
+
+.app .project-section.active{
+    width: 100%;
+    margin-top: 0px;
+    overflow-y: scroll;
+    max-height: 100vh;
+    /* margin-bottom: 100px; */
+}
+
+
+.content .projects{
+    height: 100%;
+    width: 100%;
+}
+
+
+.projects .project-card{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.projects .project-card img{
+    width: 50%;
+    height: 100%;
+}
+
+.projects .project-card .project__description{
+    background-color: #fff;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.project-card .project__description .project__title{
+    margin-bottom: 10px;
+    color: #000;
+    font-size: 1.2rem;
+}
+
+.project-card .project__description .project__creation__date{
+    color: #222;
+    font-size: 0.9rem;
+    line-height: 2;
+}
+
+.project-card .project__description .project__about{
+    font-size: 0.94rem;
+    color: #222;
+    position: relative;
+}
+
+.project-card .project__links{
+    font-size: 0.94rem;
+    color: #222;
+    margin-top: 15px;
+}
+
+.project-card .project__links a{
+    padding: 0px 14px;
+    font-size: 16px;
+    transition: 0.8s ease;
+}
+
+.project-card .project__links a:hover{
+    transition: 0.2s ease;
+    font-size: 19px;
+}
+
+
+
+/* MEDIA QUERY */
+
+@media (max-width: 870px){
+        
+    .app .project-section.active{
+        width: 90%;
+    }
+    
+    .projects .project-card img{
+        height: auto;
+        object-fit: cover;
+    }
+    
+    .projects .project-card .project__description{
+        text-align: center;
+    }
+    
+    .project-card .project__links{
+        margin: 10px 0px;
+    }
+}
+
+
+
+
+@media (max-width: 870px){
+        
+    .app .project-section.active{
+        width: 90%;
+    }
+    
+    .projects .project-card img{
+        height: auto;
+        object-fit: cover;
+    }
+    
+    .projects .project-card .project__description{
+        text-align: center;
+    }
+    
+    .project-card .project__links{
+        margin: 10px 0px;
+    }
+}
+
+
+
+
+@media (max-width: 600px){
+    .app .project-section.active{
+        width: 90%;
+    }
+    
+    .projects .project-card{
+        flex-direction: column;
+    }
+    
+    .projects .project-card img{
+        width: 100%;
+    }
+    
+    .projects .project-card .project__description{
+        width: 100%;
+        text-align: center;
+    }
+    
+    .project-card .project__links{
+        margin: 20px 0px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,426 @@
+
+
+/* style the header */
+
+header{
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 200px; 
+    transition: 0.5s ease;
+}
+
+
+header .brand{
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+header .navigation{
+    position: relative;
+}
+
+header .navigation .navigation-items a{
+    position: relative;
+    color: #fff;
+    font-size: 1em;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: 0.3s ease;
+}
+
+/* the nav item underline */
+header .navigation .navigation-items a:before{
+    content: "";
+    position: absolute;
+    background: #fff;
+    width: 0%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+
+/* underline 100% on hover */
+header .navigation .navigation-items a:hover:before{
+    width: 100%;
+}
+
+
+
+
+
+section{
+    padding: 100px 200px;
+    transition: 0.3s ease;
+}
+
+
+.app{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #2696E8;
+    overflow: hidden;
+}
+
+.app:before{
+    z-index: 777;
+    content: "";
+    position: absolute;
+    background: rgba(3, 96, 251, 0.3);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+/* hide the slide text by default */
+.app .content{
+    display: none;
+}
+
+/* show the text with active class */
+.app .content.active{
+    z-index: 888;
+    color: #fff;
+    width: 70%;
+    margin-top: 50px;
+    display: block;
+}
+
+.app .content h1{
+    font-size: 4em;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 75px;
+    margin-bottom: 40px;
+}
+
+.app .content h1 span{
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+
+.app .content p{
+    margin-bottom: 65px;
+}
+
+.app .content p .role__tag{
+    margin-right: 5px;
+    padding: 0px 5px;
+    text-decoration: none;
+    color: #fffffe;
+    border: 1px solid #2962ff;
+    background-image: linear-gradient(to right,#2962ff,#28afd4);
+    /* border: 1px solid #888;
+    background-image: linear-gradient(to right,#888,#888); */
+    transition: all .1s;
+    border-radius: 5px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+
+.app .content p .skill__tag{
+    margin-right: 5px;
+    padding: 0px 5px;
+    text-decoration: none;
+    color: #fffffe;
+    border: 1px solid #2962ff;
+    background-image: linear-gradient(to right,#2962ff,#28afd4);
+    border: 1px solid #888;
+    background-image: linear-gradient(to right,#888,#888);
+    transition: all .1s;
+    border-radius: 5px;
+    line-height: 3;
+    cursor: pointer;
+/* tooltip */
+    position: relative;
+    transition: 0.4s ease;
+}
+
+.app .content p .skill__tag:hover{
+    transition: 0.2s ease;
+    border-bottom: 2px dotted #fff; 
+    background-image: linear-gradient(to right,#28afd4,#2962ff);
+
+}
+
+  
+  /* Tooltip text */
+  .skill__tag .tooltiptext {
+    visibility: hidden;
+    width: fit-content;
+    background-color: #fff;
+    color: #222;
+    text-align: center;
+    line-height: 1;
+    white-space: nowrap;
+    padding: 5px;
+    border-radius: 6px;
+  
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+  
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  /* Tooltip arrow */
+  .skill__tag .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .skill__tag:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
+.app .content a{
+    background-color: #fff;
+    padding: 15px 35px;
+    color: #1680AC;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 2px;
+}
+
+
+/* media icons */
+
+.app .media-icons{
+    z-index: 888;
+    position: absolute;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s ease;
+}
+
+
+.app .media-icons a{
+    color: #fff;
+    font-size: 1.6em;
+}
+
+
+.app .media-icons a:not(:last-child){
+    margin-bottom: 20px;
+}
+
+
+.app .media-icons a:hover{
+    transform: scale(1.3);
+}
+
+.app video{
+    z-index: 000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.slider-navigation{
+    z-index: 888;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(80px);
+    margin-bottom: 12px;
+}
+
+.slider-navigation .nav-btn{
+    width: 12px;
+    height: 15px;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 2px rgba(255, 255, 255 0.5);
+    transition: 0.3s ease;
+}
+
+.slider-navigation .nav-btn.active{
+    background-color: #2696e9;
+}
+
+.slider-navigation .nav-btn:not(:last-child){
+    margin-right: 20px;
+}
+
+.slider-navigation .nav-btn:hover{
+    transform: scale(1.2);
+}
+
+.video-slide{
+    position: absolute;
+    width: 100%;
+    clip-path: circle(0% at 0 50%);
+}
+
+.video-slide.active{
+    clip-path: circle(150% at 0 50%);
+    transition: 2s ease;
+    transition-property: clip-path;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1040px){
+    header{
+        padding: 15px 20px;
+    }
+
+    section{
+        padding: 100px 20px;
+        transition: 0.3s ease;
+    }
+    .app .media-icons{
+        right: 15px;
+    }
+
+    
+    header .navigation{
+        display: none;
+    }
+
+    /* when the menu is opened */
+    header .navigation.active{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(1, 1, 1, 0.5);
+        transition: 0.3s ease;
+    }
+
+    header .navigation .navigation-items a{
+        color: #222;
+        font-size: 1.2em;
+        margin: 20px;
+    }
+    
+    header .navigation .navigation-items a:before{
+        background-color: #222;
+        height: 5px;
+    }
+
+    header .navigation.active .navigation-items{
+        background-color: #fff;
+        width: 600px;
+        max-width: 600px;
+        margin: 20px;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 5px;
+        box-shadow: 0 5px 25px rgb(1 1 1/ 20%);
+
+    }
+
+    .menu-btn{
+        background: url('./../img/open.png')no-repeat;
+        background-size: 35px;
+        background-position: center;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+    
+    .menu-btn.active{
+        z-index: 999;
+        background: url('./../img/close.png')no-repeat;
+        background-size: 30px;
+        background-position: center;
+        transition: 0.3s ease;
+    }
+}
+
+
+
+@media (max-width: 600px){
+    .app .content h1{
+        font-size: 2.3em;
+        letter-spacing: 5px;
+        line-height: 50px;
+        margin-bottom: 10px;
+    }
+
+    .app .content.active{
+        margin-top: 0px;
+    }
+
+    .app .content h1 span{
+        font-size: 1em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
