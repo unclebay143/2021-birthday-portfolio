@@ -10,7 +10,10 @@
     overflow-y: scroll;
 }
 
-
+.key-word{
+    color: #2696E8;
+    /* font-weight: 900; */
+}
 
 /* HIDE THE MORE PARAGRAPH BY DEFAULT */
 .hidden-about{
@@ -20,13 +23,18 @@
 
 @media(max-width: 600px){
 
-    .about-section.active{
-        margin-top: 30px !important;
+    .app .about-section.active{
+        /* margin-top: 30px; */
+        font-weight: 700;
+        width: 100%;
     }
 
     .about-caption{
         max-height: 350px;
-        width: 288px;
-        max-width: 288px;
+        width: 100%;
+    }
+
+    .about-caption p{
+        margin-top: 35px;
     }
 }

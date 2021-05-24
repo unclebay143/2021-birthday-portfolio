@@ -135,7 +135,8 @@
 
 @media (max-width: 600px){
     .app .project-section.active{
-        width: 90%;
+        width: 100%;
+        
     }
     
     .projects .project-card{

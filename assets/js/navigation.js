@@ -28,7 +28,14 @@ const sliderNav = (manual) =>{
 
     // remove active from other slides
     slides.forEach((slide) => {
+        // OTHER SLIDES
         slide.classList.remove("active")
+
+
+        // TOGGLE THE HAMBURGER ALSO
+        menuBtn.classList.toggle("active")
+        // CLOSE THE NAVIGATION WHEN USER CLICK A NAVLINK
+        navigation.classList.remove("active")
     });
 
     // remove active from other contents
@@ -49,17 +56,11 @@ btns.forEach((btn, i) => {
     btn.addEventListener("click", ()=>{
         sliderNav(i)
 
-        console.log();
-        // ONLY DISPLAY THE MEDIA ICONS ON HOME, ABOUT AND CONTACT PAGE
+        // DISPLAY MEDIA ICON ON LANDING PAGE
         if(i === 0){
-            // REMOVE THE MEDIA ICON FROM THE PROJECT PAGE
-            document.querySelector(".hide-social-media").classList.replace("hide-social-media", "media-icons")
-        }else if( (i === 3 || i === 4) && window.screen.availWidth > 900){
-            // REMOVE THE MEDIA ICON FROM THE PROJECT PAGE
-            document.querySelector(".media-icons").classList.replace("media-icons", "hide-social-media")
-        }else{
-            // REMOVE THE MEDIA ICON FROM THE PROJECT PAGE
-            document.querySelector(".media-icons").classList.replace("media-icons", "hide-social-media")
+            document.querySelector(".hide-media-icons").classList.replace("hide-media-icons", "media-icons")
+        }else if((i === 1 || i === 2 || i=== 3 || i === 4) && window.screen.availWidth < 900){// HIDE ICONS FOR PROJECT, CERTIFICATE AND CONTACT PAGE ON SMALL DEVICES
+            document.querySelector(".media-icons").classList.replace("media-icons", "hide-media-icons")
         }
     })
 });
