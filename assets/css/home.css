@@ -35,6 +35,8 @@ header .navigation .navigation-items a{
     text-decoration: none;
     margin-left: 20px;
     transition: 0.3s ease;
+    padding-bottom: 0.3em;
+
 }
 
 /* the nav item underline */
@@ -47,6 +49,7 @@ header .navigation .navigation-items a:before{
     bottom: 0;
     left: 0;
     transition: 0.3s ease;
+
 }
 
 /* underline 100% on hover */
@@ -370,17 +373,6 @@ section{
         transition: 0.3s ease;
     }
 
-    header .navigation .navigation-items a{
-        color: #222;
-        font-size: 1.2em;
-        margin: 20px;
-    }
-    
-    header .navigation .navigation-items a:before{
-        background-color: #222;
-        height: 5px;
-    }
-
     header .navigation.active .navigation-items{
         background-color: #fff;
         width: 600px;
@@ -392,8 +384,19 @@ section{
         align-items: center;
         border-radius: 5px;
         box-shadow: 0 5px 25px rgb(1 1 1/ 20%);
-
     }
+
+    header .navigation .navigation-items a{
+        color: #222;
+        font-size: 1.2em;
+        margin: 20px;
+    }
+    
+    header .navigation .navigation-items a:before{
+        background-color: #222;
+        height: 5px;
+    }
+
 
     .menu-btn{
         background: url('./../img/open.png')no-repeat;
