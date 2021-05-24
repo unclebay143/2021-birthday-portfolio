@@ -227,6 +227,10 @@ section{
     transition: 0.5s ease;
 }
 
+.app .hide-media-icons{
+    display: none;
+}
+
 
 .app .media-icons a{
     color: #fff;
@@ -313,10 +317,6 @@ section{
     transition: 2s ease;
     transition-property: clip-path;
 }
-
-
-
-
 
 
 
@@ -428,14 +428,38 @@ section{
         letter-spacing: 5px;
         line-height: 50px;
         margin-bottom: 10px;
+        margin-top: 130px;
+    }
+
+    .app .content .intro-caption{
+        line-height: 2;
+        /* margin-top: 40px; */
+        margin-bottom: 30px;
     }
 
     .app .content.active{
         margin-top: 0px;
+        width: 100%;
     }
 
     .app .content h1 span{
         font-size: 1em;
+    }
+
+    .btn__hire__me{
+        /* margin-top: -30px; */
+        display: none;
+    }
+
+
+    
+    .app .media-icons{
+        right: 0px;
+        bottom: 40px;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        padding: 15px 20px;
     }
 }
 
