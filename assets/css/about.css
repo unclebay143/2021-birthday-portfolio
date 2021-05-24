@@ -1,0 +1,32 @@
+/* SET THE HEIGHT OF THE TEXT */
+.about-caption{
+    height: fit-content;
+    max-height: 180px;
+}
+
+
+/* MAKE THE TEXT WRAPPERSCROLL */
+.scroll-about{
+    overflow-y: scroll;
+}
+
+
+
+/* HIDE THE MORE PARAGRAPH BY DEFAULT */
+.hidden-about{
+    display: none;
+}
+
+
+@media(max-width: 600px){
+
+    .about-section.active{
+        margin-top: 30px !important;
+    }
+
+    .about-caption{
+        max-height: 350px;
+        width: 288px;
+        max-width: 288px;
+    }
+}

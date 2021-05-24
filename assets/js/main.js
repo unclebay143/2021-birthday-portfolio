@@ -6,8 +6,8 @@ const navigation = document.querySelector(".navigation");
 // javascript for video slider
 const btns = document.querySelectorAll(".nav-btn");
 
-// get all video slide
-const slides = document.querySelectorAll(".video-slide")
+// get all video or image slide
+const slides = document.querySelectorAll(".img-slide")
 
 // get all video slide contents
 const contents = document.querySelectorAll(".content")
@@ -23,17 +23,17 @@ menuBtn.addEventListener('click', ()=>{
 const sliderNav = (manual) =>{
     // remove active from other btn
     btns.forEach((btn) => {
-        btn .classList.remove("active")
+        btn.classList.remove("active")
     });
 
     // remove active from other slides
     slides.forEach((slide) => {
-        slide .classList.remove("active")
+        slide.classList.remove("active")
     });
 
     // remove active from other contents
     contents.forEach((content) => {
-        content .classList.remove("active")
+        content.classList.remove("active")
     });
 
     // add active to the current btn

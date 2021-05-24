@@ -1,0 +1,115 @@
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 570px;
+  position: relative;
+  margin: auto;
+  /* padding: 50px 0px; */
+}
+
+.certification{
+    width: 100% !important;
+    margin-top: 0px !important;
+
+}
+
+.certification h1{
+    font-size: 2rem !important;
+}
+
+/* Hide the images by default */
+.certificate-slides {
+  display: none;
+}
+
+.certificate-slides img{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 25%;
+  width: auto;
+  margin-top: -20px;
+  padding: 16px;
+  transition: 0.6s ease;
+  user-select: none;
+  background-color: rgba(0,0,0,0.8);
+  color: #f2f2f2;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 2px;
+  font-size: 1.2rem;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  background-color: rgba(0,0,0,0.8);
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 7px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.activ, .dot:hover {
+  background-color: #555;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}

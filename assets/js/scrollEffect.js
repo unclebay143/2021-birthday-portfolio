@@ -8,7 +8,6 @@ const reveal = () =>{
     const reveals = document.querySelectorAll('.reveal');
     // FORLOOP FOR EACH OF THE REVEALS
     for(let i = 0; i < reveals.length; i++){
-        console.log(i);
         // GET THE BROWSER WINDOW HEIGHT
         const windowheight = window.innerHeight;
         // GET THE POSITION OF THE CURRENT ELEMENT ON THE BROWSER
@@ -17,11 +16,9 @@ const reveal = () =>{
         const revealpoint = 100;
         // IF THE TOP IS ON FOCUS ACTIVE THE ELEMENT
         if(revealtop < windowheight - revealpoint){
-            console.log(i, "done");
             reveals[i].classList.add('active');
         }
         else{// IF NOT REMOVE THE ACTIVE CLASS
-            console.log(i, "not done");
           reveals[i].classList.remove('active');
         }
     }
