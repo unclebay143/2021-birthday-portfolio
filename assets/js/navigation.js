@@ -59,7 +59,7 @@ btns.forEach((btn, i) => {
         // DISPLAY MEDIA ICON ON LANDING PAGE
         if(i === 0){
             document.querySelector(".hide-media-icons").classList.replace("hide-media-icons", "media-icons")
-        }else if((i === 1 || i === 2 || i === 4) && window.screen.availWidth < 900){// HIDE ICONS FOR PROJECT, CERTIFICATE AND CONTACT PAGE ON SMALL DEVICES
+        }else if((i === 1 || i === 2 || i=== 3 || i === 4) && window.screen.availWidth < 900){// HIDE ICONS FOR PROJECT, CERTIFICATE AND CONTACT PAGE ON SMALL DEVICES
             document.querySelector(".media-icons").classList.replace("media-icons", "hide-media-icons")
         }
     })
