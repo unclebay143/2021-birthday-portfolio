@@ -59,7 +59,7 @@ const projects = [
         html_url: "https://github.com/unclebay143/9ijaKids-internship-task#readme"
     },
     {
-        name: "Unclebigbay's 2020 Portfolio",
+        name: "Unclebigbay's 2021 Portfolio",
         image:`<img loading="lazy" src= './../../assets/img/project/unclebigbay-portfolio.png' alt="unclebigbay personal website built by unclebay" />`,
         description: "My 2021 Birthday Present",
         created_at: "04/25/2020",
