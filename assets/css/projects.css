@@ -5,7 +5,7 @@
   margin-top: 0px;
 
   /* uncomment to have a scroll */
-  /* overflow-y: scroll; */
+  overflow-y: scroll;
   max-height: 100vh;
   /* margin-bottom: 100px; */
 }
@@ -22,7 +22,7 @@
 
   /* uncomment if you have a scroll */
   /* padding: 20px 20px 20px 0px; */
-  padding: 20px 3px 20px 0px;
+  padding: 20px 0px 20px 0px;
 }
 
 .projects .project-card img {
