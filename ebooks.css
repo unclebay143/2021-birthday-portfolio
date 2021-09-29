@@ -75,7 +75,16 @@ header {
   border: 1px solid black;
   width: 100%;
   flex-direction: column;
+  align-items: center;
   padding: 3rem;
+}
+
+.form-heading {
+  color: white;
+  text-align: center;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  font-size: 2.5rem;
 }
 
 .input-wrapper {
@@ -115,13 +124,50 @@ header {
   cursor: pointer;
 }
 
+/* pitch section */
+
+.pitch-card {
+  padding: 3rem;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.pitch-card h3 {
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+
+.pitch-point {
+  line-height: 2.5;
+  width: 50%;
+}
+
+.pitch-point a {
+  margin-right: 5px;
+  padding: 0px 5px;
+  text-decoration: none;
+  color: #fffffe;
+  border: 1px solid #2962ff;
+  background-image: linear-gradient(to right, #2962ff, #28afd4);
+  transition: all 0.1s;
+  border-radius: 5px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.pitch-card .section-scroll {
+  margin-top: 3rem;
+}
+
 @media (max-width: 900px) {
   .top-header {
     font-size: 0.5rem;
     padding: 7px;
   }
 
-  .hero h1 {
+  .hero h1,
+  .pitch-card h3 {
     font-size: 1.5rem;
     text-align: center;
     line-height: 1.7;
@@ -130,9 +176,27 @@ header {
   .hero .ebook-cover-page {
     width: 80%;
   }
+  .section-1 {
+    height: 100%;
+  }
 
   .input-wrapper input,
   .input-wrapper button {
     width: 100%;
+  }
+
+  /* pitch section */
+  .pitch-card {
+    height: 100%;
+    padding: 1rem;
+  }
+
+  .pitch-point {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .form-heading {
+    font-size: 1.5rem;
   }
 }
