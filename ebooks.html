@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./ebooks.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+  <body class="flex-center">
+    <header>
+      <div class="top-header">
+        <h2>🌟 Join the waiting list for my upcoming e-book 🌟</h2>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero flex-center">
+        <h1>First Restful API project for beginners</h1>
+        <div class="ebook-cover-page">
+          <img
+            src="./ebook-cover-page.jpg"
+            alt="ebook cover page"
+            width="100%"
+            height="100%"
+          />
+        </div>
+      </section>
+      <div class="section-scroll">
+        <a href="#wait-list-form">
+          <i class="far fa-arrow-alt-circle-down"></i>
+        </a>
+      </div>
+
+      <section class="wait-list-form flex-center" id="wait-list-form">
+        <form name="waitlist" netlify>
+          <!-- fullname -->
+          <div class="input-wrapper flex-center">
+            <label for="fullname">Preferred name</label>
+            <input required type="text" id="fullname" name="fullname" />
+          </div>
+          <!-- email -->
+          <div class="input-wrapper flex-center">
+            <label for="email">email address</label>
+            <input required type="email" id="email" name="email" />
+          </div>
+          <!-- country -->
+          <div class="input-wrapper flex-center">
+            <label for="country">country</label>
+            <input required type="text" id="country" name="country" />
+          </div>
+
+          <div class="input-wrapper flex-center">
+            <button>Notify me when it's out!!!</button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
