@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  flex-direction: column;
+}
+/* utility */
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* header */
+header {
+  width: 100%;
+  text-align: center;
+  background-color: black;
+}
+
+.top-header {
+  color: white;
+  font-size: 0.875rem;
+  padding: 12px;
+}
+
+/* main hero */
+.hero {
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.hero h1 {
+  font-size: 2rem;
+}
+
+.hero .ebook-cover-page {
+  width: 50%;
+}
+
+/* section scroll down */
+.section-scroll {
+  margin: 2rem;
+  text-align: center;
+}
+
+.section-scroll a {
+  text-decoration: none;
+  color: black;
+}
+
+.section-scroll i {
+  cursor: pointer;
+  font-size: 4rem;
+}
+
+/* form */
+
+.wait-list-form {
+  height: 100vh;
+  background-color: black;
+}
+
+.wait-list-form form {
+  border: 1px solid black;
+  width: 100%;
+  flex-direction: column;
+  padding: 3rem;
+}
+
+.input-wrapper {
+  flex-direction: column;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.input-wrapper label {
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 0.6rem;
+  color: white;
+}
+
+.input-wrapper input {
+  border: none;
+  border-radius: 0.25rem;
+  height: 3rem;
+  width: 50%;
+  text-align: center;
+  font-size: 1.2rem;
+  outline: none;
+  font-family: monospace;
+  font-weight: 500;
+}
+
+.input-wrapper button {
+  width: 50%;
+  height: 3rem;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  background-color: dodgerblue;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .top-header {
+    font-size: 0.5rem;
+    padding: 7px;
+  }
+
+  .hero h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 1.7;
+  }
+
+  .hero .ebook-cover-page {
+    width: 80%;
+  }
+
+  .input-wrapper input,
+  .input-wrapper button {
+    width: 100%;
+  }
+}
