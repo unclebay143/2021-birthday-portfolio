@@ -76,7 +76,7 @@ header {
 /* form */
 
 .wait-list-form {
-  height: 100vh;
+  min-height: 100vh;
   background-color: black;
 }
 
@@ -199,7 +199,7 @@ footer a {
 @media (max-width: 900px) {
   .top-header {
     font-size: 0.5rem;
-    padding: 7px;
+    padding: 19px;
   }
 
   .hero h1,
@@ -207,15 +207,18 @@ footer a {
     font-size: 1.5rem;
     text-align: center;
     line-height: 1.7;
-  }
-
-  .hero h1 {
     font-size: 2rem;
   }
 
   .hero .ebook-cover-page {
-    width: 80%;
+    width: 100%;
+    margin-top: 1rem;
   }
+
+  .share-btn {
+    margin: 1.9rem 0 3rem 0;
+  }
+
   .section-1 {
     height: 100%;
   }
@@ -234,6 +237,8 @@ footer a {
   .pitch-point {
     width: 100%;
     margin-bottom: 1rem;
+    text-align: center;
+    line-height: 2;
   }
 
   .form-heading {
