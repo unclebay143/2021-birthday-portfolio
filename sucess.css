@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 60%;
+  padding-top: 3rem;
+}
+
+h1 {
+  line-height: 3;
+  font-size: 3rem;
+}
+
+p {
+  line-height: 2.5;
+  font-size: 1.1rem;
+}
+
+.tag_link {
+  margin-right: 5px;
+  padding: 0px 5px;
+  text-decoration: none;
+  color: #fffffe;
+  border: 1px solid #2962ff;
+  background-image: linear-gradient(to right, #2962ff, #28afd4);
+  transition: all 0.1s;
+  border-radius: 5px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.share-btn {
+  margin-top: 3rem;
+}
+
+footer {
+  margin-top: 3rem;
+  width: 60%;
+}
+
+footer h1 {
+  font-size: 14px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #3567be;
+}
+
+@media (max-width: 900px) {
+  main,
+  footer {
+    width: 90%;
+    text-align: center;
+  }
+  h1 {
+    line-height: 1.5;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  p {
+    line-height: 2;
+  }
+
+  .tag_link {
+    line-height: 3;
+  }
+}
